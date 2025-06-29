@@ -1,0 +1,20 @@
+<html>
+    <head>
+    <script>
+let globalVar="i am global"; //Global variable
+function testScope()
+{
+    let functionVar="i am inside a function"; //function testScope
+    if(true){
+        let blockVar="i am inside if block"; //Block Scope
+console.log(blockVar);
+}
+console.log(functionVar); //Works
+//console.log(blockVar); //error Cant access blockVar outside its block
+}
+testScope();
+console.log(globalVar); //works(Global variable)
+//console.log(functionVar;) //error cant access functionVar outside function
+</script>
+</head>
+</html>
